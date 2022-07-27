@@ -15,12 +15,12 @@
 
 # 2. 라즈베리파이 + 카메라 모듈
 ## 2.1 라즈베리파이 tensorflow 설치
-[설치 과정 참고](https://m.blog.naver.com/PostView.naver?blogId=chandong83&logNo=221334936927&proxyReferer=https:%2F%2Fm.search.naver.com%2Fsearch.naver%3Fsm%3Dmtb_hty.top%26where%3Dm%26oquery%3D%25EB%259D%25BC%25EC%25A6%2588%25EB%25B2%25A0%25EB%25A6%25AC%25ED%258C%258C%25EC%259D%25B4%2B%25EB%25B8%2594%25EB%25A3%25A8%25ED%2588%25AC%25EC%258A%25A4%2B%25EB%258F%2599%25EA%25B8%2580%26tqi%3DhXudosqVWeKssOhzNb8ssssssnR-108914%26query%3D%25EB%259D%25BC%25EC%25A6%2588%25EB%25B2%25A0%25EB%25A6%25AC%25ED%258C%258C%25EC%259D%25B4%2B%25ED%2585%2590%25EC%2584%259C%2B%25ED%2594%258C%25EB%25A1%259C%2B)                   
+[설치 과정 참고](https://m.blog.naver.com/PostView.naver?blogId=chandong83&logNo=221334936927&proxyReferer=https:%2F%2Fm.search.naver.com%2Fsearch.naver%3Fsm%3Dmtb_hty.top%26where%3Dm%26oquery%3D%25EB%259D%25BC%25EC%25A6%2588%25EB%25B2%25A0%25EB%25A6%25AC%25ED%258C%258C%25EC%259D%25B4%2B%25EB%25B8%2594%25EB%25A3%25A8%25ED%2588%25AC%25EC%258A%25A4%2B%25EB%258F%2599%25EA%25B8%2580%26tqi%3DhXudosqVWeKssOhzNb8ssssssnR-108914%26query%3D%25EB%259D%25BC%25EC%25A6%2588%25EB%25B2%25A0%25EB%25A6%25AC%25ED%258C%258C%25EC%259D%25B4%2B%25ED%2585%2590%25EC%2584%259C%2B%25ED%2594%258C%25EB%25A1%259C%2B)                                         
 
 ## 2.2 라즈베리파이 + teachable machine
-[참고 자료1](https://ai-creator.tistory.com/26)
-[참고 자료2](https://doljokilab.tistory.com/27)
+[참고 자료1](https://ai-creator.tistory.com/26)                        
+[참고 자료2](https://doljokilab.tistory.com/27)                             
 
 ## 2.3 라즈베리파이 + face recognition 라이브러리
-[라이브러리 설치 및 실습](https://ukayzm.github.io/python-face-recognition/)
-[참고 자료1](https://bskyvision.com/1089)
+[라이브러리 설치 및 실습](https://ukayzm.github.io/python-face-recognition/)                       
+[참고 자료1](https://bskyvision.com/1089)                                  
