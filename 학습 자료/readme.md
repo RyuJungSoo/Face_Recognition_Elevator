@@ -24,3 +24,4 @@
 ## 2.3 라즈베리파이 + face recognition 라이브러리
 [라이브러리 설치 및 실습](https://ukayzm.github.io/python-face-recognition/)                       
 [참고 자료1](https://bskyvision.com/1089)                                  
+[참고 자료2](https://www.teknotut.com/en/facial-recognition-with-raspberry-pi-and-opencv/)
