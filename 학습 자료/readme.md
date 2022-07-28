@@ -8,13 +8,15 @@
 ## [학습 과정 정리 블로그1](https://blog.naver.com/goldfox10/222825824708)                              
 <img src="https://user-images.githubusercontent.com/81175672/181405923-d2b81445-618f-4300-8f89-06792ec8c055.png"  width="800" height="600"/>  
 
-아래와 같이 블록코딩으로 구현할 수 있습니다.
+아래와 같이 블록코딩으로 구현할 수 있습니다.   
+
 <img src="https://user-images.githubusercontent.com/94752167/181406915-d6564d86-2913-42ea-8c25-581413d6c2c7.png" width="800" height="600"/>  
 
 <img src="https://user-images.githubusercontent.com/94752167/181406936-c55e3083-b023-44ad-bf7d-e1a98b0fe9f2.png" width="800" height="600"/>
 
 <img src="https://user-images.githubusercontent.com/81175672/181135996-5dcd48cc-789c-4bff-b275-2429f2ba7653.jpg"  width="300" height="600"/>                     
-앱인벤터는 여러 사물에 대해 학습되어 있는 학습 모델을 가져와서 사물 인식을 할 수 있는 API를 제공합니다.
+앱인벤터는 여러 사물에 대해 학습되어 있는 학습 모델을 가져와서 사물 인식을 할 수 있는 API를 제공합니다.   
+
 이에 따라, 사물을 인식하는 앱을 제작하여 여러 사물들을 인식시키는 실습을 진행하였습니다.
 
 ## [학습 과정 정리 블로그2](https://blog.naver.com/goldfox10/222825899977)               
@@ -22,7 +24,9 @@
 직접 모델을 학습한 후, 학습 모델을 불러와 사물 인식을 할 수 있는 API를 제공                     
 
 [학습 모델 제작 사이트](https://classifier.appinventor.mit.edu/oldpic/)에서 모델 학습 후 앱인벤터에 업로드하여 적용
-<img src="https://user-images.githubusercontent.com/81175672/181406091-30d0a59a-f842-4329-a0ef-c2d3ec49ede2.png"  width="800" height="600"/>             
+<img src="https://user-images.githubusercontent.com/81175672/181406091-30d0a59a-f842-4329-a0ef-c2d3ec49ede2.png"  width="800" height="600"/>    
+<img src="https://user-images.githubusercontent.com/94752167/181407804-ac8b1c76-714b-44a1-a8f6-af890e696af2.png"  width="800" height="600"/>  
+
 
 # 2. 라즈베리파이 + 카메라 모듈
 ## 2.1 라즈베리파이 tensorflow 설치
