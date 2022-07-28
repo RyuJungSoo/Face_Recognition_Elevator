@@ -26,6 +26,9 @@
 [학습 모델 제작 사이트](https://classifier.appinventor.mit.edu/oldpic/)에서 모델 학습 후 앱인벤터에 업로드하여 적용
 <img src="https://user-images.githubusercontent.com/81175672/181406091-30d0a59a-f842-4329-a0ef-c2d3ec49ede2.png"  width="800" height="600"/>    
 <img src="https://user-images.githubusercontent.com/94752167/181407804-ac8b1c76-714b-44a1-a8f6-af890e696af2.png"  width="800" height="600"/>  
+<img src="https://user-images.githubusercontent.com/94752167/181408401-7d3aa6cb-5c77-4a09-8ab9-64378299d370.png"  width="800" height="600"/>    
+
+신라면과 진라면의 이미지를 학습시킨 모델을 가져와서 앱인벤터를 통해 신라면과 진라면을 분류하는 실습을 진행하였습니다.
 
 
 # 2. 라즈베리파이 + 카메라 모듈
