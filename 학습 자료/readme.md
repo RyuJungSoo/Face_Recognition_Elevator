@@ -15,7 +15,7 @@
 직접 모델을 학습한 후, 학습 모델을 불러와 사물 인식을 할 수 있는 API를 제공                     
 
 [학습 모델 제작 사이트](https://classifier.appinventor.mit.edu/oldpic/)에서 모델 학습 후 앱인벤터에 업로드하여 적용
-<img src="https://user-images.githubusercontent.com/81175672/181406091-30d0a59a-f842-4329-a0ef-c2d3ec49ede2.png"  width="300" height="600"/>             
+<img src="https://user-images.githubusercontent.com/81175672/181406091-30d0a59a-f842-4329-a0ef-c2d3ec49ede2.png"  width="800" height="600"/>             
 
 # 2. 라즈베리파이 + 카메라 모듈
 ## 2.1 라즈베리파이 tensorflow 설치
