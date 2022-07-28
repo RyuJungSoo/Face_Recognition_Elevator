@@ -5,13 +5,17 @@
 의의가 있다고 판단합니다.
 
 # 1. 앱인벤터 인공지능 API
-## [학습 과정 정리 블로그1](https://blog.naver.com/goldfox10/222825824708)       
+## [학습 과정 정리 블로그1](https://blog.naver.com/goldfox10/222825824708)                              
+<img src="https://user-images.githubusercontent.com/81175672/181405923-d2b81445-618f-4300-8f89-06792ec8c055.png"  width="800" height="600"/>       
 <img src="https://user-images.githubusercontent.com/81175672/181135996-5dcd48cc-789c-4bff-b275-2429f2ba7653.jpg"  width="300" height="600"/>                     
 여러 사물에 대해 학습되어 있는 학습 모델을 가져와서 사물 인식을 할 수 있는 API를 제공        
 
 ## [학습 과정 정리 블로그2](https://blog.naver.com/goldfox10/222825899977)               
 <img src="https://user-images.githubusercontent.com/81175672/181136211-66810df9-33f1-4f3e-b72f-d7dbc52da5ec.jpg"  width="300" height="600"/>               
-직접 모델을 학습한 후, 학습 모델을 불러와 사물 인식을 할 수 있는 API를 제공   
+직접 모델을 학습한 후, 학습 모델을 불러와 사물 인식을 할 수 있는 API를 제공                     
+
+[학습 모델 제작 사이트](https://classifier.appinventor.mit.edu/oldpic/)에서 모델 학습 후 앱인벤터에 업로드하여 적용
+<img src="https://user-images.githubusercontent.com/81175672/181406091-30d0a59a-f842-4329-a0ef-c2d3ec49ede2.png"  width="300" height="600"/>             
 
 # 2. 라즈베리파이 + 카메라 모듈
 ## 2.1 라즈베리파이 tensorflow 설치
