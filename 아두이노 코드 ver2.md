@@ -22,6 +22,7 @@
   int endfloor; // 도착 층
   int call = 0; // 명령 순서, 0: 시작 층 정하기, 1: 도착 층 정하기, 2: 모터 작동
 
+  int now_floor; // 엘리베이터가 위치한 현재 층 수
 
 void setup() {
   Serial.begin(9600);
@@ -34,58 +35,58 @@ void setup() {
   pinMode(in1, OUTPUT);
   pinMode(in2, OUTPUT);
   
-  int now_floor = 1 // 엘리베이터가 위치한 현재 층 수
+  now_floor = 1;
 }
 
-void move_up(int move, int start, int end)
+void move_up(int moveS, int start, int endS)
 {
-  if (move <= 0)
+  if (moveS <= 0)
     Serial.println("잘못된 move값 입니다.");
   
-  while(start && end) // 종료 조건은 층 값이 0
+  while(start && endS) // 종료 조건은 층 값이 0
   {
     digitalWrite(in1, HIGH);
     digitalWrite(in2, LOW);  
     digitalWrite(enA, 10);
-    delay(960 * move);//(이동층수 * 1초) 딜레이
+    delay(960 * moveS);//(이동층수 * 1초) 딜레이
           
-    Serial.print(move);
+    Serial.print(moveS);
     Serial.println("초 경과");
-    if(i >= move)// 이동 층수만큼 시간이 지나면
+    if(i >= moveS)// 이동 층수만큼 시간이 지나면
     {
       // 정지 명령
       digitalWrite(in1, LOW);
       digitalWrite(in2, LOW);
 
       digitalWrite(enA,0);
-      start = end = 0; // 상황 종료
+      start = endS = 0; // 상황 종료
       break; 
     }
   }
 }
 
-void move_down(int move, int start, int end)
+void move_down(int moveS, int start, int endS)
 {
-  if (move <= 0)
+  if (moveS <= 0)
     Serial.println("잘못된 move값 입니다.");
   
-  while(start && end) // 종료 조건은 층 값이 0
+  while(start && endS) // 종료 조건은 층 값이 0
   {
     digitalWrite(in1, LOW);
     digitalWrite(in2, HIGH);  
     digitalWrite(enA, 10);
-    delay(960 * move);//(이동층수 * 1초) 딜레이
+    delay(960 * moveS);//(이동층수 * 1초) 딜레이
           
-    Serial.print(move);
+    Serial.print(moveS);
     Serial.println("초 경과");
-    if(i >= move)// 이동 층수만큼 시간이 지나면
+    if(i >= moveS)// 이동 층수만큼 시간이 지나면
     {
       // 정지 명령
       digitalWrite(in1, LOW);
       digitalWrite(in2, LOW);
 
       digitalWrite(enA,0);
-      start = end = 0; // 상황 종료
+      start = endS = 0; // 상황 종료
       break; 
     }
   }
@@ -103,8 +104,8 @@ void loop() {
     // 1층에서 호출
     if(state == '1' && call == 0)
     {
-      if (now_floor > state)
-        move_down(now_floor - state, now_floor, state);
+      if (now_floor > 1)
+        move_down(now_floor - 1, now_floor, 1);
       state = 0;
       call = 1;
 
@@ -115,10 +116,10 @@ void loop() {
     // 2층에서 호출
     else if(state == '2' && call == 0)
     {
-      if (now_floor > state)
-        move_down(now_floor - state, now_floor, state);
-      else (now_floor < state)
-        move_up(state - now_floor, now_floor, state);
+      if (now_floor > 2)
+        move_down(now_floor - state, now_floor, 2);
+      else if (now_floor < 2)
+        move_up(2 - now_floor, now_floor, 2);
       
       state = 0;
       call = 1;
@@ -130,8 +131,8 @@ void loop() {
     // 3층에서 호출
     else if(state == '3' && call == 0)
     {
-      if (now_floor < state)
-        move_up(state - now_floor, now_floor, state);
+      if (now_floor < 3)
+        move_up(3 - now_floor, now_floor, 3);
       state = 0;
       call = 1;
 
@@ -190,12 +191,12 @@ void loop() {
       
       if (endfloor - startfloor > 0) // 시작층 < 도착층 -> 엘리베이터 UP
       {
-        now_floor = end_floor
+        now_floor = endfloor;
         move_up(endfloor - startfloor, startfloor, endfloor);
       }
       else if (endfloor - startfloor < 0)//시작층 > 도착층 -> 엘리베이터 DOWN
       {
-        now_floor = end_floor
+        now_floor = endfloor;
         move_down(startfloor - endfloor, startfloor, endfloor);
       }
     }
