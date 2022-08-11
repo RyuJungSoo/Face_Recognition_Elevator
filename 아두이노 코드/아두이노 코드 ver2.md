@@ -42,26 +42,29 @@ void move_up(int moveS, int start, int endS)
 {
   if (moveS <= 0)
     Serial.println("잘못된 move값 입니다.");
-  
+  Serial.print("출발지는 ");
+  Serial.print(start);
+  Serial.println("층 입니다.");
+  Serial.print("도착지는 ");
+  Serial.print(endS);
+  Serial.println("층 입니다.");
+  Serial.println("");
   while(start && endS) // 종료 조건은 층 값이 0
   {
     digitalWrite(in1, HIGH);
     digitalWrite(in2, LOW);  
     digitalWrite(enA, 10);
-    delay(960 * moveS);//(이동층수 * 1초) 딜레이
+    delay(930 * moveS);//(이동층수 * 1초) 딜레이
           
     Serial.print(moveS);
     Serial.println("초 경과");
-    if(i >= moveS)// 이동 층수만큼 시간이 지나면
-    {
-      // 정지 명령
-      digitalWrite(in1, LOW);
-      digitalWrite(in2, LOW);
-
-      digitalWrite(enA,0);
-      start = endS = 0; // 상황 종료
-      break; 
-    }
+    //이동 층수만큼 시간이 지나면
+    // 정지 명령
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, LOW);
+    digitalWrite(enA,0);
+    start = endS = 0; // 상황 종료
+    break; 
   }
 }
 
@@ -69,26 +72,30 @@ void move_down(int moveS, int start, int endS)
 {
   if (moveS <= 0)
     Serial.println("잘못된 move값 입니다.");
-  
+
+  Serial.print("출발지는 ");
+  Serial.print(start);
+  Serial.println("층 입니다.");
+  Serial.print("도착지는 ");
+  Serial.print(endS);
+  Serial.println("층 입니다.");
+  Serial.println("");
   while(start && endS) // 종료 조건은 층 값이 0
   {
     digitalWrite(in1, LOW);
     digitalWrite(in2, HIGH);  
     digitalWrite(enA, 10);
-    delay(960 * moveS);//(이동층수 * 1초) 딜레이
+    delay(930 * moveS);//(이동층수 * 1초) 딜레이
           
     Serial.print(moveS);
     Serial.println("초 경과");
-    if(i >= moveS)// 이동 층수만큼 시간이 지나면
-    {
-      // 정지 명령
-      digitalWrite(in1, LOW);
-      digitalWrite(in2, LOW);
+    // 정지 명령
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, LOW);
+    digitalWrite(enA,0);
 
-      digitalWrite(enA,0);
-      start = endS = 0; // 상황 종료
-      break; 
-    }
+    start = endS = 0; // 상황 종료
+    break; 
   }
 }
 
@@ -185,7 +192,7 @@ void loop() {
     }
 
 
-  	else 
+    if(call == 2)
     {
       // 모터 동작
       
@@ -193,11 +200,15 @@ void loop() {
       {
         now_floor = endfloor;
         move_up(endfloor - startfloor, startfloor, endfloor);
+        call = 0;
+        delay(960);
       }
       else if (endfloor - startfloor < 0)//시작층 > 도착층 -> 엘리베이터 DOWN
       {
         now_floor = endfloor;
         move_down(startfloor - endfloor, startfloor, endfloor);
+        call = 0;
+        delay(960);
       }
     }
 }
