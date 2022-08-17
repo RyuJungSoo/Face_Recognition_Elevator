@@ -1,4 +1,4 @@
-```
+```C
 #include <SoftwareSerial.h>
   #define RXD 8
   #define TXD 9
