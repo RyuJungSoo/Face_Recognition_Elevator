@@ -1,4 +1,3 @@
-```C
 #include <SoftwareSerial.h>
   #define RXD 8
   #define TXD 9
@@ -54,7 +53,7 @@ void move_up(int moveS, int start, int endS)
     digitalWrite(in1, HIGH);
     digitalWrite(in2, LOW);  
     digitalWrite(enA, 10);
-    delay(930 * moveS);//(이동층수 * 1초) 딜레이
+    delay(1500 * moveS);//(이동층수 * 1초) 딜레이
           
     Serial.print(moveS);
     Serial.println("초 경과");
@@ -85,7 +84,7 @@ void move_down(int moveS, int start, int endS)
     digitalWrite(in1, LOW);
     digitalWrite(in2, HIGH);  
     digitalWrite(enA, 10);
-    delay(930 * moveS);//(이동층수 * 1초) 딜레이
+    delay(1500 * moveS);//(이동층수 * 1초) 딜레이
           
     Serial.print(moveS);
     Serial.println("초 경과");
@@ -212,4 +211,3 @@ void loop() {
       }
     }
 }
-```
