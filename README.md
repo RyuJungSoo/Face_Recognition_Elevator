@@ -12,9 +12,10 @@
 
 
 ## 엘리베이터 호출 단말
-<img src="https://user-images.githubusercontent.com/81175672/185378527-8abceaf7-3d43-411b-884b-07e90e3f460d.gif"  width="300" height="500"/>                                          
-조작 단말은 스마트폰 앱을 만들어 엘리베이터 모듈 조작이 가능하도록 했습니다.             
-스마트폰 앱은 **앱 인벤터** 를 사용하여 만들었으며 **얼굴인식** 에는 API, **음성인식** 에는 google 음성인식을 사용했습니다. 
+<img src="https://user-images.githubusercontent.com/81175672/185378527-8abceaf7-3d43-411b-884b-07e90e3f460d.gif"  width="300" height="500"/>                        
+
+조작 단말은 스마트폰 앱을 만들어 엘리베이터 모듈 조작이 가능하도록 했습니다.                                          
+스마트폰 앱은 **앱 인벤터** 를 사용하여 만들었으며 **얼굴인식** 에는 **PersonalImageClassifier API** , **음성인식** 에는 **google 음성인식** 을 사용했습니다. 
 
 
 
