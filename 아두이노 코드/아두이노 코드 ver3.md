@@ -1,4 +1,4 @@
-```C
+```
 #include <SoftwareSerial.h>
   #define RXD 8
   #define TXD 9
@@ -110,12 +110,12 @@ void loop() {
       call = 1;
     if (state == '1' || state == '2' || state == '3')
       call = 0;
-    Serial.print(char(state));
-    Serial.println("층에서 호출");
   }
 //------------------------------------------------
-	if (call == 0)
+  if (call == 0)
     {
+      Serial.print(char(state));
+      Serial.println("층에서 호출");
       // 1층에서 호출
       if(state == '1')
       {
