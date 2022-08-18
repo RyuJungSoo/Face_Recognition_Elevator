@@ -24,6 +24,17 @@
 아두이노, 기어드 모터, 엘리베이터 키트, HC - 06를 사용하여 엘리베이터 모듈을 제작했습니다.          
 
 ## 시연영상
+**< 얼굴인식 호출 및 음성인식 >**                       
+
+https://user-images.githubusercontent.com/81175672/185382912-45973ccf-d05e-496c-81c5-a2dffa9bb513.mp4                    
+
+***           
+**< 키패드 >**              
+
+https://user-images.githubusercontent.com/81175672/185383106-2ea7b2b4-da23-4863-880e-9260741a9276.mp4                
+
+## 마무리하면서...
+
 
 
 
