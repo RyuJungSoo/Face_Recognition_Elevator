@@ -101,7 +101,8 @@ void move_down(int moveS, int start, int endS)
 
 void loop() {
   // 엘리베이터 얼굴 인식 호출
-  if(blueToothSerial.available() > 0){
+  if(blueToothSerial.available() > 0)
+  {
     
     state = blueToothSerial.read();
     
@@ -111,53 +112,59 @@ void loop() {
       call = 0;
     Serial.print(char(state));
     Serial.println("층에서 호출");
-    
-    }
-
-    // 1층에서 호출
-    if(state == '1' && call == 0)
+  }
+//------------------------------------------------
+	if (call == 0)
     {
-      if (now_floor > 1)
-        move_down(now_floor - 1, now_floor, 1);
-      state = 0;
-      call = 1;
+      // 1층에서 호출
+      if(state == '1')
+      {
+        if (now_floor > 1)
+          move_down(now_floor - 1, now_floor, 1);
+        state = 0;
+        call = 1;
 
-      now_floor = 1;
-      delay(1000);
-    }
+        now_floor = 1;
+        delay(1000);
+      }
 
-    // 2층에서 호출
-    else if(state == '2' && call == 0)
-    {
-      if (now_floor > 2)
-        move_down(now_floor - 2, now_floor, 2);
-      else if (now_floor < 2)
-        move_up(2 - now_floor, now_floor, 2);
-      
-      state = 0;
-      call = 1;
+      // 2층에서 호출
+      else if(state == '2')
+      {
+        if (now_floor > 2)
+          move_down(now_floor - 2, now_floor, 2);
+        else if (now_floor < 2)
+          move_up(2 - now_floor, now_floor, 2);
 
-      now_floor = 2;
-      delay(1000);
-    }
+        state = 0;
+        call = 1;
 
-    // 3층에서 호출
-    else if(state == '3' && call == 0)
-    {
-      if (now_floor < 3)
-        move_up(3 - now_floor, now_floor, 3);
-      state = 0;
-      call = 1;
+        now_floor = 2;
+        delay(1000);
+      }
 
-      now_floor = 3;
-      delay(1000);
+      // 3층에서 호출
+      else if(state == '3')
+      {
+        if (now_floor < 3)
+          move_up(3 - now_floor, now_floor, 3);
+        state = 0;
+        call = 1;
+
+        now_floor = 3;
+        delay(1000);
+      }
+      if(blueToothSerial.available() > 0)   
+          state = blueToothSerial.read();
     }
 
    
 
-//-------------------------------------------------------
+//---------------------------------------------
     // 도착지가 1층일때
-    if(state == '4' && call == 1 )
+  if(call == '1')
+  {
+    if(state == '4')
     {
       
       state = 0;
@@ -168,7 +175,7 @@ void loop() {
     }
 
     // 도착지가 2층일때
-    else if(state == '5' && call == 1)
+    else if(state == '5')
     {
       
       state = 0;
@@ -179,7 +186,7 @@ void loop() {
     }
     
     // 도착지가 3층일때
-    else if(state == '6' && call == 1)
+    else if(state == '6')
     {
       
       state = 0;
@@ -188,7 +195,7 @@ void loop() {
       endfloor = 3;
       delay(1000);
     }
-
+  }
 //----------------------------------------------------------------------------
     if(call == 2)
     {
