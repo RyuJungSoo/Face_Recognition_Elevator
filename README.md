@@ -35,7 +35,6 @@ https://user-images.githubusercontent.com/81175672/185382912-45973ccf-d05e-496c-
 
 https://user-images.githubusercontent.com/81175672/185383106-2ea7b2b4-da23-4863-880e-9260741a9276.mp4                
 
-## 마무리하면서...
 
 
 
