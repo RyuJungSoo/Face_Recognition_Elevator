@@ -20,7 +20,7 @@
 자세한 앱 제작은 [엘리베이터 호출 앱](https://github.com/RyuJungSoo/Face_Recognition_Elevator/blob/main/%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%ED%84%B0%20%ED%98%B8%EC%B6%9C%20%EC%95%B1/%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%ED%84%B0%20%ED%98%B8%EC%B6%9C%20%EC%95%B1%20%EC%B5%9C%EC%A2%85.md) 을 참고해주세요.           
 
 ## 엘리베이터 모듈 제작
-<img src="https://user-images.githubusercontent.com/81175672/185380484-313b5835-7334-4208-8c45-9fc025da8afc.jpg"  width="300" height="500"/>             
+<img src="https://user-images.githubusercontent.com/81175672/186560752-1e49c77e-020a-497e-9943-2262a448b145.jpg"  width="300" height="500"/>             
 
 아두이노, 기어드 모터, 엘리베이터 키트, HC - 06를 사용하여 엘리베이터 모듈을 제작했습니다.          
 자세한 아두이노 코드는 [엘리베이터 호출 모듈 코드](https://github.com/RyuJungSoo/Face_Recognition_Elevator/blob/main/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%20%EC%BD%94%EB%93%9C/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%20%EC%BD%94%EB%93%9C%20%EC%B5%9C%EC%A2%85.md) 를 참고해주세요.                 
